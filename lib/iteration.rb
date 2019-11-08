@@ -23,8 +23,8 @@ def join_ingredients(src)
 end
 
 def find_greater_pair(src)
+  row=[]
   new_array=[]
-  row=0 
   while row<src.count do 
     if src[row][0]>src[row][1]
       new_array.push(src[row][0])
