@@ -32,7 +32,7 @@ def find_greater_pair(src)
     end 
     row+=1
   end
-  new_array
+  return new_array
 end
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
