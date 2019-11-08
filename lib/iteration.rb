@@ -26,9 +26,9 @@ def find_greater_pair(src)
   new_array=[]
   row=0 
   while row<src.count do 
-    if src[row][0]>src[row].last
-      new_array.push(src[row].first)
-    else new_array.push([row].last)
+    if src[row][0]>src[row][1]
+      new_array.push(src[row][0])
+    else new_array.push([row][1])
     end 
     row+=1
   end
