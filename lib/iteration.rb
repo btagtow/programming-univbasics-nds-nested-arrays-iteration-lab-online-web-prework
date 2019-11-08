@@ -24,10 +24,10 @@ end
 
 def find_greater_pair(src)
   new_array=[]
-  row_index=0 
-  while row_index<src.count do 
+  row=0 
+  while row<src.count do 
     if src[row_index].first>src[row_index].last
-      new_array.unshift(src[row_index].first)
+      new_array.push(src[row_index].first)
     else new_array.unshift([row_index].last)
     end 
   end
