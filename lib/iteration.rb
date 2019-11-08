@@ -26,12 +26,13 @@ def find_greater_pair(src)
   new_array=[]
   row=0 
   while row<src.count do 
-    if src[row_index].first>src[row_index].last
-      new_array.push(src[row_index].first)
-    else new_array.unshift([row_index].last)
+    if src[row].first>src[row].last
+      new_array.push(src[row].first)
+    else new_array.push([row].last)
     end 
+    row+=1
   end
-  row_index+=1
+  new_array
 end
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
